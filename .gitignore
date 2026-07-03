@@ -1,0 +1,15 @@
+.build/
+.DS_Store
+*.xcuserstate
+dist/
+website/
+ui/
+.codex/
+*.fit
+*.csv
+*.log
+.env
+.env.*
+fit_ui.py
+fit_tool.py
+Assets/AppIcon.iconset/

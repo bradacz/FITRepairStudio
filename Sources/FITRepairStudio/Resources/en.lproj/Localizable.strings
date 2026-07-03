@@ -1,0 +1,89 @@
+"app.window.title" = "FIT Repair Studio";
+"alert.error.title" = "Error";
+"button.ok" = "OK";
+"menu.open.fit" = "Open FIT...";
+"menu.save.as" = "Save As...";
+"menu.repair.crc" = "Repair CRC";
+"toolbar.open" = "Open";
+"toolbar.repair.crc" = "Repair CRC";
+"toolbar.save" = "Save";
+
+"store.no.file" = "No file";
+"panel.open.title" = "Open FIT File";
+"panel.save.title" = "Save FIT File";
+"status.loaded" = "Loaded: %@";
+"status.crc.repaired" = "CRC repaired";
+"status.field.saved" = "%@ saved";
+"status.saved" = "Saved: %@";
+
+"sidebar.file" = "File";
+"sidebar.open.fit" = "Open FIT";
+"sidebar.repair.crc" = "Repair CRC";
+"sidebar.save.as" = "Save As";
+"sidebar.diagnostics" = "Diagnostics";
+"sidebar.activity" = "Activity";
+"sidebar.messages" = "Messages";
+"sidebar.load.fit.file" = "Load a FIT file.";
+"sidebar.no.data" = "No data.";
+"sidebar.no.messages" = "No messages.";
+"summary.records" = "Records";
+"summary.session" = "Session";
+"summary.activity" = "Activity";
+"summary.size" = "Size";
+"summary.profile" = "Profile";
+"summary.start" = "Start";
+"summary.end" = "End";
+"summary.duration" = "Duration";
+"summary.duration.seconds" = "%d s";
+
+"status.ok" = "OK";
+"status.error" = "Error";
+"status.time" = "Time";
+
+"warning.size.mismatch" = "File size does not match the FIT header.";
+"warning.file.crc.invalid" = "The final FIT CRC is invalid. Strava will likely reject this file.";
+"warning.parse.errors" = "The parser found errors in the FIT file structure.";
+"warning.time.backwards" = "Some record timestamps go backwards in time.";
+"warning.bad.coordinates" = "Some coordinates are outside the valid range.";
+
+"records.title" = "Records";
+"records.count" = "%d rows";
+"records.strava.ok" = "Strava CRC OK";
+"records.crc.error" = "CRC error";
+"records.empty.title" = "Load a FIT file";
+"records.empty.description" = "Open a .fit file, then select a record to edit it in the inspector.";
+"column.timestamp" = "Timestamp";
+"column.latitude" = "Latitude";
+"column.longitude" = "Longitude";
+"column.distance" = "Distance m";
+"column.speed" = "Speed m/s";
+"column.altitude" = "Altitude m";
+"column.hr" = "HR";
+"column.cadence" = "Cad";
+"column.power" = "Power";
+"column.temperature" = "Temp";
+
+"inspector.title" = "Inspector";
+"inspector.empty.title" = "No messages";
+"inspector.empty.record" = "Select a record in the table.";
+"inspector.empty.session" = "This file does not contain a session message.";
+"inspector.empty.activity" = "This file does not contain an activity message.";
+"inspector.empty.file" = "This file does not contain a file_id message.";
+"inspector.index.offset" = "index %d · offset %d";
+"inspector.global" = "global %d";
+"inspector.read.only" = "read only";
+"inspector.save.field.help" = "Save field";
+
+"mode.record" = "Record";
+"mode.session" = "Session";
+"mode.activity" = "Activity";
+"mode.file" = "File";
+
+"fit.error.too.short" = "The file is too short for a FIT header.";
+"fit.error.unsupported.header.size" = "Unsupported FIT header size: %d.";
+"fit.error.missing.magic" = "The file is missing the .FIT magic value.";
+"fit.error.declared.data.beyond.file" = "Declared FIT data extends beyond the end of the file.";
+"fit.error.message.index.not.found" = "Message with index %d was not found.";
+"fit.error.field.not.editable" = "Field %@ is not editable.";
+"fit.error.unsupported.base.type" = "Unsupported FIT base type: %d.";
+"fit.error.invalid.value" = "Invalid value: %@.";

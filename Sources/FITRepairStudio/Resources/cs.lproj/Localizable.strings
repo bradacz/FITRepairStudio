@@ -1,0 +1,89 @@
+"app.window.title" = "FIT Repair Studio";
+"alert.error.title" = "Chyba";
+"button.ok" = "OK";
+"menu.open.fit" = "Otevřít FIT...";
+"menu.save.as" = "Uložit jako...";
+"menu.repair.crc" = "Opravit CRC";
+"toolbar.open" = "Otevřít";
+"toolbar.repair.crc" = "Opravit CRC";
+"toolbar.save" = "Uložit";
+
+"store.no.file" = "Bez souboru";
+"panel.open.title" = "Otevřít FIT soubor";
+"panel.save.title" = "Uložit FIT soubor";
+"status.loaded" = "Načteno: %@";
+"status.crc.repaired" = "CRC opraveno";
+"status.field.saved" = "%@ uloženo";
+"status.saved" = "Uloženo: %@";
+
+"sidebar.file" = "Soubor";
+"sidebar.open.fit" = "Otevřít FIT";
+"sidebar.repair.crc" = "Opravit CRC";
+"sidebar.save.as" = "Uložit jako";
+"sidebar.diagnostics" = "Diagnostika";
+"sidebar.activity" = "Aktivita";
+"sidebar.messages" = "Zprávy";
+"sidebar.load.fit.file" = "Načti FIT soubor.";
+"sidebar.no.data" = "Bez dat.";
+"sidebar.no.messages" = "Bez zpráv.";
+"summary.records" = "Records";
+"summary.session" = "Session";
+"summary.activity" = "Activity";
+"summary.size" = "Velikost";
+"summary.profile" = "Profil";
+"summary.start" = "Start";
+"summary.end" = "Konec";
+"summary.duration" = "Trvání";
+"summary.duration.seconds" = "%d s";
+
+"status.ok" = "OK";
+"status.error" = "Chyba";
+"status.time" = "Čas";
+
+"warning.size.mismatch" = "Velikost souboru nesedí s FIT hlavičkou.";
+"warning.file.crc.invalid" = "Koncové FIT CRC je neplatné. Strava tento soubor pravděpodobně odmítne.";
+"warning.parse.errors" = "Parser našel chyby ve struktuře FIT souboru.";
+"warning.time.backwards" = "Některé record timestampy jdou zpět v čase.";
+"warning.bad.coordinates" = "Některé souřadnice jsou mimo platný rozsah.";
+
+"records.title" = "Records";
+"records.count" = "%d řádků";
+"records.strava.ok" = "Strava CRC OK";
+"records.crc.error" = "CRC chyba";
+"records.empty.title" = "Načti FIT soubor";
+"records.empty.description" = "Otevři soubor .fit a potom vyber record pro editaci v inspectoru.";
+"column.timestamp" = "Timestamp";
+"column.latitude" = "Latitude";
+"column.longitude" = "Longitude";
+"column.distance" = "Distance m";
+"column.speed" = "Speed m/s";
+"column.altitude" = "Altitude m";
+"column.hr" = "HR";
+"column.cadence" = "Cad";
+"column.power" = "Power";
+"column.temperature" = "Temp";
+
+"inspector.title" = "Inspector";
+"inspector.empty.title" = "Bez zpráv";
+"inspector.empty.record" = "Vyber record v tabulce.";
+"inspector.empty.session" = "Soubor neobsahuje session zprávu.";
+"inspector.empty.activity" = "Soubor neobsahuje activity zprávu.";
+"inspector.empty.file" = "Soubor neobsahuje file_id zprávu.";
+"inspector.index.offset" = "index %d · offset %d";
+"inspector.global" = "global %d";
+"inspector.read.only" = "read only";
+"inspector.save.field.help" = "Uložit pole";
+
+"mode.record" = "Record";
+"mode.session" = "Session";
+"mode.activity" = "Activity";
+"mode.file" = "File";
+
+"fit.error.too.short" = "Soubor je příliš krátký pro FIT hlavičku.";
+"fit.error.unsupported.header.size" = "Nepodporovaná velikost FIT hlavičky: %d.";
+"fit.error.missing.magic" = "Soubor nemá FIT magic .FIT.";
+"fit.error.declared.data.beyond.file" = "Deklarovaná FIT data přesahují konec souboru.";
+"fit.error.message.index.not.found" = "Zpráva s indexem %d nebyla nalezena.";
+"fit.error.field.not.editable" = "Pole %@ není editovatelné.";
+"fit.error.unsupported.base.type" = "Nepodporovaný FIT base type: %d.";
+"fit.error.invalid.value" = "Neplatná hodnota: %@.";
