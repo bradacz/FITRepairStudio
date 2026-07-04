@@ -1,11 +1,39 @@
 # FIT Repair Studio
 
-FIT Repair Studio is a native macOS app for inspecting, editing, repairing, and
-saving `.fit` activity files.
+FIT Repair Studio is an open-source native macOS app for inspecting, editing,
+repairing, and saving `.fit` activity files.
 
 It is intended for cyclists, runners, triathletes, coaches, and activity-data
-power users who need to recover malformed FIT files that fail to upload to
-services such as Strava, TrainingPeaks, intervals.icu, or GoldenCheetah.
+users who need to recover malformed FIT files that fail to upload to services
+such as Strava, TrainingPeaks, intervals.icu, or GoldenCheetah.
+
+## Links
+
+- Website: https://fitrepairstudio.site/
+- Download for macOS: https://fit-repair-studio.b-cdn.net/FITRepairStudio-mac.zip
+- Source code: https://github.com/bradacz/FITRepairStudio
+- Voluntary support: https://www.buymeacoffee.com/mariantomay
+
+## Open Source And Voluntary Support
+
+FIT Repair Studio is free and open-source software released under the MIT
+License. You can download, use, build, inspect, modify, and share the source
+code under the terms in [LICENSE](LICENSE).
+
+Payment is not required to download or use the app. Voluntary contributions are
+welcome and help cover Apple Developer Program membership, notarized macOS
+builds, hosting, and maintenance. Donations do not unlock extra features and do
+not change how issues or pull requests are handled.
+
+## Privacy
+
+FIT Repair Studio processes activity files locally on your Mac. The app does
+not require an account and does not upload FIT files to FIT Repair Studio
+servers.
+
+FIT files can contain sensitive location, health, device, and training data.
+Do not publish real activity files in GitHub issues or pull requests unless you
+have removed private data and are comfortable making the file public.
 
 ## Features
 
@@ -105,3 +133,19 @@ The app includes Czech and English localizations:
 Sources/FITRepairStudio/Resources/cs.lproj/Localizable.strings
 Sources/FITRepairStudio/Resources/en.lproj/Localizable.strings
 ```
+
+## Contributing
+
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md)
+before opening a pull request, especially the notes about private activity
+files and test data.
+
+## Support
+
+Use GitHub issues for reproducible bugs and feature requests. For private
+support or security reports, see [SUPPORT.md](SUPPORT.md) and
+[SECURITY.md](SECURITY.md).
+
+## License
+
+FIT Repair Studio is released under the MIT License. See [LICENSE](LICENSE).
