@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SidebarView: View {
     @EnvironmentObject private var store: FitDocumentStore
+    @Environment(\.openWindow) private var openWindow
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -20,6 +21,7 @@ struct SidebarView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     actionPanel
+                    legalPanel
                     diagnosticsPanel
                     summaryPanel
                     messageCountsPanel
@@ -65,6 +67,20 @@ struct SidebarView: View {
                     .lineLimit(3)
                     .padding(.top, 4)
             }
+        }
+    }
+
+    private var legalPanel: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            PanelTitle(L10n.tr("sidebar.legal"))
+
+            Button {
+                openWindow(id: AppWindowID.legalInfo)
+            } label: {
+                Label(L10n.tr("sidebar.about.legal"), systemImage: "info.circle")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .buttonStyle(.bordered)
         }
     }
 

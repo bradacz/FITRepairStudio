@@ -25,6 +25,8 @@ struct FITRepairStudioApp: App {
                 }
         }
         .commands {
+            LegalCommands()
+
             CommandGroup(replacing: .newItem) {
                 Button(L10n.tr("menu.open.fit")) {
                     store.openFilePanel()
@@ -45,6 +47,10 @@ struct FITRepairStudioApp: App {
                 .keyboardShortcut("r")
                 .disabled(!store.canEdit)
             }
+        }
+
+        Window(L10n.tr("legal.window.title"), id: AppWindowID.legalInfo) {
+            LegalInfoView()
         }
     }
 }

@@ -7,6 +7,12 @@ BUNDLE_ID="com.local.fit-repair-studio"
 MIN_SYSTEM_VERSION="13.0"
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+VERSION_JSON="$ROOT_DIR/Sources/FITRepairStudio/Resources/AppVersion.json"
+read_version_value() {
+  /usr/bin/python3 -c 'import json, sys; print(json.load(open(sys.argv[1], encoding="utf-8"))[sys.argv[2]])' "$VERSION_JSON" "$1"
+}
+APP_VERSION="$(read_version_value version)"
+APP_BUILD="$(read_version_value build)"
 DIST_DIR="$ROOT_DIR/dist"
 APP_BUNDLE="$DIST_DIR/$APP_NAME.app"
 APP_CONTENTS="$APP_BUNDLE/Contents"
@@ -33,6 +39,7 @@ cp "$BUILD_BINARY" "$APP_BINARY"
 chmod +x "$APP_BINARY"
 cp "$APP_ICON" "$APP_RESOURCES/AppIcon.icns"
 cp -R "$ROOT_DIR/Sources/FITRepairStudio/Resources/"*.lproj "$APP_RESOURCES/"
+cp "$VERSION_JSON" "$APP_RESOURCES/AppVersion.json"
 
 cat >"$INFO_PLIST" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
@@ -59,9 +66,9 @@ cat >"$INFO_PLIST" <<PLIST
   <key>CFBundleIconFile</key>
   <string>AppIcon</string>
   <key>CFBundleShortVersionString</key>
-  <string>1.0.0</string>
+  <string>$APP_VERSION</string>
   <key>CFBundleVersion</key>
-  <string>1</string>
+  <string>$APP_BUILD</string>
   <key>LSMinimumSystemVersion</key>
   <string>$MIN_SYSTEM_VERSION</string>
   <key>NSPrincipalClass</key>
