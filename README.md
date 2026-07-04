@@ -14,6 +14,10 @@ such as Strava, TrainingPeaks, intervals.icu, or GoldenCheetah.
 - Source code: https://github.com/bradacz/FITRepairStudio
 - Voluntary support: https://www.buymeacoffee.com/mariantomay
 
+## Screenshot
+
+![FIT Repair Studio macOS screenshot](Assets/Screenshot.png)
+
 ## Open Source And Voluntary Support
 
 FIT Repair Studio is free and open-source software released under the MIT
